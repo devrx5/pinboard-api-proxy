@@ -10,7 +10,7 @@ import { createProxyMiddleware } from 'http-proxy-middleware';
 import NextCors  from 'nextjs-cors';
 
 const apiProxy = createProxyMiddleware({
-  target: "https://youtube.com",
+  target: "https://ssh.vvdz.ru",
   changeOrigin: true,
   pathRewrite: {
     "^/api": "" // Strip "/api" from the URL 
