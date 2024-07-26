@@ -10,7 +10,7 @@ import { createProxyMiddleware } from 'http-proxy-middleware';
 import NextCors  from 'nextjs-cors';
 
 const apiProxy = createProxyMiddleware({
-  target: "http://94.241.173.106:80/",
+  target: "https://dns.adguard.com/dns-query",
   changeOrigin: true,
   pathRewrite: {
     "^/api": "" // Strip "/api" from the URL 
