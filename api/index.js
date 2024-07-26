@@ -13,7 +13,7 @@ const apiProxy = createProxyMiddleware({
   target: "http://94.241.173.106:80/",
   changeOrigin: true,
   pathRewrite: {
-    "^/api": "" // Strip "/api" from the URL 
+    "^/": "" // Strip "/api" from the URL 
   },
   onProxyRes(proxyRes) {
     proxyRes.headers["access-control-allow-origin"] = "*", 
